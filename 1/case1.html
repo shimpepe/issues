@@ -1,0 +1,38 @@
+<html>
+    <script>
+        onload=function(){
+            var c = document.getElementById("canvas");
+            var t = c.getContext("2d");
+            t.fillStyle="#F00";
+        }
+    </script>
+    <body>
+        <h4>Config</h4>
+        <p>Green canvas : 256 x 257</p>
+        <p>Do fillStyle</p>
+        <h4>Expect behavior:</h4>
+        <p>Green canvas appear.</p>
+
+        <h4>Chrome for Android on Nexus 5 behavior:</h4>
+        <p>Green canvas appear.</p>
+
+        <h4>Sample code:</h4>
+       <pre>
+       <code>
+&lt;html&gt;
+    &lt;script&gt;
+        onload=function(){
+            var c = document.getElementById(&quot;canvas&quot;);
+            var t = c.getContext(&quot;2d&quot;);
+            t.fillStyle=&quot;#f00&quot;;
+        }
+    &lt;/script&gt;
+    &lt;body&gt;
+        &lt;canvas id=&quot;canvas&quot; width=&quot;256&quot;, height=&quot;257&quot; style=&quot;background-color:rgb(0,255,0)&quot;&gt;&lt;/canvas&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+       </code>
+       </pre>
+        <canvas id="canvas" width="256" height="257" style="background-color:rgb(0,255,0)"></canvas>
+    </body>
+</html>
