@@ -1,14 +1,11 @@
 <html>
     <head>
-    <script>
-        onload=function(){
-            var canvas = document.getElementById("canvas");
-            var ctx = canvas.getContext("2d");
-            ctx.fillRect(10,10,20,20);
-        };
-    </script>
     </head>
     <body>
-        <canvas id="canvas" width="256" height="4096" style="background-color:rgb(0,255,0)"></canvas>
+        <canvas id="canvas" width="256" height="4096" style="background-color:lime"></canvas>
+        <script>
+            var ctx = document.querySelector("canvas").getContext("2d");
+            ctx.fillRect(10,10,20,20);
+        </script>
     </body>
 </html>
